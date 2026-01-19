@@ -4,20 +4,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web Layout</title>
+      <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body class="inter-fonts">
+       <!-- header section start -->
+
        <header class="navbar">
-           <h2 class="logo">Tech<span class="gradient">Wave</span></h2>
-           <nav>
+             <div class="nav-logo">
+                 <h2>Tech<span class="gradient wave">Wave</span></h2>
+             </div>
+            
+           <nav class="menu">
                 <a href="">About</a>
                 <a href="">Episodes</a>
                 <a href="">Host</a>
-           </nav>
-           <button class="btn">Subscribe<i class="fa-thin fa-arrow-right-long"></i></button>
-           <img src="assets/hamburger-menu.png" alt="">
-       </header>
+             </nav>
+                  <button class="btn gradient">Subscribe</button>
+                 <span class="hamburger-menu"><i class="fa-solid fa-bars"></i></span>
+          
+         </header>
+
+          <!-- header section end -->
+            
+           <!-- hero section start -->
+       
+           <section class="hero-section">
+                <div class="hero-container">
+                <div class="hero-images">
+                 <img src="assets/microphone.png" alt="">
+                   <div class="badge">NEW</div> 
+               </div> 
+                 
+
+                 <div class="hero-content">
+                  <h2 class="hero-heading">TechWave</h2>
+                  <p class="hero-text">Your daily dose of tech insights, productivity hacks, and personal growth</p>
+                    <button class="spotify-btn gradient btn"><i class="fa-brands fa-spotify icon"></i>Listen On Spotify</button>
+                     <button class="subscribe-btn btn"><i class="fa-regular fa-envelope icon"></i>Subscribe</button>
+                 </div>
+                  
+               </div>
+       </section> 
+       
+        <!-- hero section end -->
+
+    
+
+       
       
 </body>
 </html>

@@ -7,6 +7,7 @@
 }
 
 
+
 *{
      margin: 0;
      padding: 0;
@@ -14,7 +15,52 @@
 }
   
  body{
-      background-color: #1A0B2E;
+       background-color: #1A0B2E; 
+ }
+
+ /* shared styles */
+
+ .btn{
+      height: 44px;
+      width: 135px;
+      font-size: 1rem;
+      font-weight: 600;
+      line-height: 19px;
+      padding: 13px 16px;
+      border-radius: 1000px;
+      border: none;
+      color: #ffff;
+ 
+     
+ }
+
+  .spotify-btn {
+           width: 201px;
+           height: 44px;
+           margin-top: 24px;
+         
+      
+ }
+
+.subscribe-btn {
+        width: 147px;
+        height: 44px;
+        margin-left: 8px;
+        background-color: #1A0B2E;
+        border: 1px solid #00FF88;
+        color:#00FF88 ;
+ }
+ /* icon styles */
+ .btn .icon{
+        margin-right: 5px;
+        height: 20px;
+        width: 20px;
+ }
+
+ 
+
+ .gradient{
+       background: var(--linear, linear-gradient(47.64deg, rgba(247, 233, 63, 1),rgba(251, 9, 180, 1),rgba(145, 0, 248, 1)));
  }
 /* navbar styles */
 
@@ -23,41 +69,107 @@
       justify-content: space-between;
       align-items: center;
       margin: 30px 200px;
+ 
       
 }
 
- .navbar .logo{
+ .nav-logo{
        
        color: rgba(255, 255, 255, 1);
 
  }
 
- .logo .gradient{
-       color: linear-gradient(to right, #ff5acd, #8f00ff);
- }
-
- nav a{
+ .menu>a{
      
       color: rgba(255, 255, 255, 1);
-      padding: 24px;
+      padding: 20px;
       font-size: 1rem;
       font-weight: 500;
       text-decoration: none;
       cursor: pointer;
  }
 
- .btn{
-      font-size: 1rem;
-      font-weight: 600;
-      line-height: 19px;
-      padding: 13px 16px;
-      border-radius: 10000px;
-      border: none;
-      color: #ffff;
-      background: var(--linear, linear-gradient(47.64deg, rgba(247, 233, 63, 1),rgba(251, 9, 180, 1),rgba(145, 0, 248, 1)));
-     
- }
-
- .navbar img{
+ 
+ .navbar .hamburger-menu{
      display: none;
  }
+
+ /* hero section styles */
+
+.hero-section{
+     background-image:                              url(../assets/hero-bg.png);
+     background-repeat: no-repeat;
+     background-size: cover;   /*image ful cover*/ 
+     height: 100vh;
+     border-top: 1px solid rgba(128, 128, 128, 0.171);
+     
+   
+}
+
+ .hero-container{
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+      margin: 0 auto;
+  
+ }
+
+ .hero-content{
+       width: 50%;
+ }
+
+  .hero-container .hero-images{
+       background-image: url(../assets/hero-circle.png);
+       
+       background-repeat: no-repeat;
+       background-position: center ;
+       padding: 69px 117px;
+       padding-bottom: 81px; 
+       width: 350px;
+       height: 350px;
+       margin-top: 100px;
+       position: relative;
+       outline-color: #1A0B2E;
+       
+
+ }
+
+ .hero-images img { 
+       width: 100%; 
+       
+ }
+
+ .hero-images .badge{
+        position: absolute;
+        top: 7%;
+        right: 3%;
+        width: 75px;
+        height: 38px;
+        padding: 7px ;
+        text-align: center;
+         color:#000;
+        background-color: rgba(0, 255, 136, 1);
+        box-shadow: 0px 3px 27px 0px rgba(0, 255, 136, 0.5);
+        border-radius: 1000px;
+
+ }
+
+ .hero-content .hero-heading{ 
+        margin-top: 40px;
+        font-size: 3.60rem;
+        font-weight: 600;
+        line-height: 73px;
+        color:#ffff;
+ }
+
+ .hero-content .hero-text{
+       color: rgba(255, 255, 255, 0.575);
+       font-size: 1rem;
+       font-weight: 400;
+       text-align: center;
+ }
+ /* responsive */
+ /* smaller device */
+
+ 
