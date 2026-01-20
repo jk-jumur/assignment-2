@@ -17,7 +17,21 @@
  body{
        background-color: #1A0B2E; 
  }
+/* header logo style */
 
+ .nav-logo h2 {
+    font-size: 32px;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+    color: #ffffff; /* Tech part */
+}
+
+.gradient.wave {
+    background: linear-gradient(90deg, #ff2bdc, #7f00ff);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
  /* shared styles */
 
  .btn{
@@ -26,22 +40,32 @@
       font-size: 1rem;
       font-weight: 600;
       line-height: 19px;
-      padding: 13px 16px;
+      padding: 13px 0;
+      padding-left: 16px;
+      padding-right: 30px;
       border-radius: 1000px;
       border: none;
       color: #ffff;
- 
+
      
  }
+
+ .btn img {
+    position: absolute;
+    left: 83%;
+    top: 41px;
+}
 
   .spotify-btn {
            width: 201px;
            height: 44px;
            margin-top: 24px;
+          padding: 12px 20px 12px 20px;
       
  }
 
 .subscribe-btn {
+        padding: 12px 20px 12px 20px;
         width: 147px;
         height: 44px;
         margin-left: 8px;
@@ -231,6 +255,7 @@
 .choose-section{
        max-width: 1200px;
        margin: 0 auto;
+       margin-bottom: 80px;
        
 }
 
@@ -243,15 +268,15 @@
        line-height: 58px;
        color:#ffff;
 }
+ /* grid area */
  .grid-container>*{
        background-color: rgba(53, 17, 101, 0.4);
        padding: 30px; 
        border-radius: 40px;
+       
       
  }
 
- /* grid area */
- 
 #premium{ 
        grid-area: premium;
        padding:  100px 40px;
@@ -294,8 +319,127 @@
  .grid-container p{
         font-size: 1rem;
         font-weight: 400;
-        color: rgba(255, 255, 255, 0.575)
+        color: rgba(255, 255, 255, 0.575);
  }
+
+ /* features section styles */
+
+ /* meet  host section styles */
+section>h1{
+       margin-bottom: 40px;
+       font-size: 3rem;
+       font-weight: 700;
+       text-align: center;
+       color: #fff;
+  }
+ .host-container{
+        background-color:rgba(53, 17, 101, 0.4); 
+        max-width: 1200px;
+        display: flex;
+        gap: 24px;
+        flex-direction: start;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        border-radius: 40px;
+    
+ }
+
+ .host-container img{
+        width: 20%;
+       margin-top: 40px;
+       margin-bottom: 40px;
+      
+       
+ }
+
+ .host-container .host-info{
+        width: 70%;
+ }
+.host-info h2{
+       font-size: 2rem;
+      font-weight: 700;
+      line-height: 39px;
+      color: #ffff;
+      padding-bottom: 16px;
+}
+ 
+.host-info p{
+
+        font-size: 1rem;
+        font-weight: 400;
+        color: rgba(255, 255, 255, 0.575);
+}
+
+.host-info img{
+        display: inline;
+        border-radius: 10px ;
+        margin-top: 16px;
+        border: 1px solid rgba(83, 60, 114, 1);
+        width: 20px;
+        height: 20px;
+        padding: 4.17px 1.68px;
+
+}
+
+/* footer styles */
+.techwave-footer {
+   background-image: url(../assets/footer-bg.png);
+   background-position: center;
+   background-size: cover;
+  padding: 60px 20px;
+  text-align: center;
+  margin-top: 120px;
+  height: 70vh;
+  
+}
+
+ .logo {
+  font-size: 42px;
+  font-weight: 700;
+  margin-bottom: 26px;
+  color:#fff;
+}
+
+.gradient.wave {
+    background: linear-gradient(90deg, #ff2bdc, #7f00ff);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.platforms {
+  display: flex;
+  justify-content: center;
+  gap: 28px;
+  flex-wrap: wrap;
+  margin-bottom: 26px;
+}
+
+.platforms a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+ 
+  text-decoration: none;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.platforms a i {
+  font-size: 16px;
+   color: #dcdcdc;
+}
+.platforms, .copyright{
+        color:  rgba(255, 255, 255, 0.575);
+}
+
+copyright {
+  font-size: 13px;
+  opacity: 0.7;
+}
+
+
  /* responsive */
  /* smaller device */
 
