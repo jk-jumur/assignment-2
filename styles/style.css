@@ -38,8 +38,6 @@
            width: 201px;
            height: 44px;
            margin-top: 24px;
-       
-         
       
  }
 
@@ -47,19 +45,17 @@
         width: 147px;
         height: 44px;
         margin-left: 8px;
-     
         background-color: #1A0B2E;
         border: 1px solid #00FF88;
         color:#00FF88 ;
  }
  /* icon styles */
+
  .btn .icon{
         margin-right: 5px;
         height: 20px;
         width: 20px;
  }
-
- 
 
  .gradient{
        background: var(--linear, linear-gradient(47.64deg, rgba(247, 233, 63, 1),rgba(251, 9, 180, 1),rgba(145, 0, 248, 1)));
@@ -71,12 +67,10 @@
       justify-content: space-between;
       align-items: center;
       margin: 28px 200px;
- 
-      
+
 }
 
  .nav-logo{
-       
        color: rgba(255, 255, 255, 1);
 
  }
@@ -104,8 +98,7 @@
      background-size: cover;   /*image ful cover*/ 
      height: 100vh;
      border-top: 1px solid rgba(128, 128, 128, 0.171);
-     
-     
+
    
 }
 
@@ -135,7 +128,6 @@
        position: relative;
        outline-color: #1A0B2E;
        
-
  }
 
  .hero-images img { 
@@ -197,7 +189,6 @@
      
  }
 
- 
  .about-text h2{
        padding-bottom: 16px;
        font-size: 3rem;
@@ -259,8 +250,9 @@
       
  }
 
+ /* grid area */
  
-  #premium{ 
+#premium{ 
        grid-area: premium;
        padding:  100px 40px;
        justify-content: center;
