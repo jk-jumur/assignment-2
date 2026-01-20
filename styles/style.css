@@ -38,6 +38,7 @@
            width: 201px;
            height: 44px;
            margin-top: 24px;
+       
          
       
  }
@@ -46,6 +47,7 @@
         width: 147px;
         height: 44px;
         margin-left: 8px;
+     
         background-color: #1A0B2E;
         border: 1px solid #00FF88;
         color:#00FF88 ;
@@ -68,7 +70,7 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      margin: 30px 200px;
+      margin: 28px 200px;
  
       
 }
@@ -103,6 +105,7 @@
      height: 100vh;
      border-top: 1px solid rgba(128, 128, 128, 0.171);
      
+     
    
 }
 
@@ -128,7 +131,7 @@
        padding-bottom: 81px; 
        width: 350px;
        height: 350px;
-       margin-top: 100px;
+       margin-top: 85px;
        position: relative;
        outline-color: #1A0B2E;
        
@@ -168,6 +171,138 @@
        font-size: 1rem;
        font-weight: 400;
        text-align: center;
+ }
+
+ /* about section styles */
+
+ .about-section{
+        padding: 100px 200px;
+        background-color: #0a0411;
+       
+ }
+ .about-container{
+      max-width: 1200px;
+      display: flex;
+      margin: 0 auto;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; 
+            
+ }
+
+ .about-text {
+        width: 60%;
+        border-bottom:1px solid gray ;
+        padding-bottom: 80px;
+     
+ }
+
+ 
+ .about-text h2{
+       padding-bottom: 16px;
+       font-size: 3rem;
+       font-weight: 700; 
+       color:#ffff;  
+       text-align: center;
+       line-height: 58px;
+ }
+
+ .about-text p{
+        color: rgba(255, 255, 255, 0.575);
+        font-size:1rem;
+        font-weight: 400;
+        line-height: 20px;
+        text-align: center;
+    
+ }
+
+ .info-card{
+        margin-top: 80px;
+        margin-bottom: 30px;
+        display: grid;
+        grid-template-columns: repeat(4, 2fr);
+        gap: 80px;
+ }
+.info-card .card h2{
+        color:#00FF88;
+        font-size: 3rem;
+        font-weight: 900;
+        line-height: 58px;
+}
+
+.info-card .card p{
+        color: rgba(255, 255, 255, 0.575);
+        font-size: 1rem;
+        padding-top: 16px;
+}
+
+/* choose techwave styles */
+.choose-section{
+       max-width: 1200px;
+       margin: 0 auto;
+       
+}
+
+.choose-section h1{
+        margin-top: 80px;
+        margin-bottom: 40px;
+       font-size: 3rem;
+       font-weight: 700;
+       text-align: center;
+       line-height: 58px;
+       color:#ffff;
+}
+ .grid-container>*{
+       background-color: rgba(53, 17, 101, 0.4);
+       padding: 30px; 
+       border-radius: 40px;
+      
+ }
+
+ 
+  #premium{ 
+       grid-area: premium;
+       padding:  100px 40px;
+       justify-content: center;
+ }
+
+  .mobile-friendly{
+       grid-area: mobile-friendly;
+ }
+
+ #global-community{
+         grid-area: global-community;
+ }
+ .exclusive-interviews{
+         grid-area: exclusive-interviews;
+ }
+
+ .rich-resources{
+      grid-area: rich-resources;
+ }
+
+.grid-container{
+    
+      display: grid;
+      gap: 20px;
+      grid-template-areas: 
+      " premium mobile-friendly mobile-friendly"
+      "premium global-community global-community"
+      "exclusive-interviews exclusive-interviews rich-resources"
+ }
+ 
+ .grid-container h2{
+        font-size:  24px ;
+        font-weight: 700;
+        margin-top: 16px;
+        margin-bottom: 16px;
+        color: #ffff;
+ }
+
+ .grid-container p{
+        font-size: 1rem;
+        font-weight: 400;
+        color: rgba(255, 255, 255, 0.575)
  }
  /* responsive */
  /* smaller device */
