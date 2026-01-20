@@ -442,5 +442,34 @@ copyright {
 
  /* responsive */
  /* smaller device */
+ @media screen and (max-width:576px) {
+
+          .navbar{
+                display: none;
+          }
+          .menu .btn{
+               display: none;
+          }
+          .navbar>div, .hamburger-menu{
+                 display: flex;
+          }
+         .about-container{
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+         }
+         .info-card{
+          
+                flex-direction: column-reverse;
+         }
+       .grid-container{
+                grid-template-areas: 
+                "premium"
+                "mobile-friendly"
+                "global-community"
+                "exclusive-interviews"
+                "rich-resources"
+          }
+ }
 
  
